@@ -6,7 +6,6 @@
         @fipanther on Twitter
         @fipanther on GitHub
 """
-
 from __future__ import print_function
 import urllib
 import datetime as dt
@@ -14,7 +13,7 @@ import feedparser
 import tweepy
 from secrets import *
 
-#   I run this program daily as a cronjob on a Miniconda python2.7 install on a CentOS 7.2 machine. If you want to run the program, you will need to install the feedparser and tweepy modules (pip install feedparser and pip install tweepy work fine). If you want it to tweet, you will also need to create your own twitter bot account, and a developer account. From the developer acct, you can obtain access keys. These go in to the secrets file. Obviously, the secrets file is not included here so you can't get access to the Galactic Bugle bot. You can modify the main portion of this file to simply obtain and parse an atom feed from arXiv
+#   I run this program daily as a cronjob with a Miniconda python2.7 install on a CentOS 7.2 machine. If you want to run the program, you will need to install the feedparser and tweepy modules (pip install feedparser and pip install tweepy work fine). If you want it to tweet, you will also need to create your own twitter bot account, and a developer account. From the developer acct, you can obtain access keys. These go in to the secrets file. Obviously, the secrets file is not included here so you can't get access to the Galactic Bugle bot. You can modify the main portion of this file to simply obtain and parse an atom feed from arXiv
 
 class Query_API(object):
     """
